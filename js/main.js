@@ -1,1 +1,1 @@
-console.log("Chamorro Lab static site loaded!");
+console.log("TFSI Lab static site loaded!");
