@@ -1,0 +1,1 @@
+console.log("Chamorro Lab static site loaded!");
