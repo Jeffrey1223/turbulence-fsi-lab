@@ -3,36 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TFSI Lab - Publications</title>
+  <title>T-FSI Lab - Publications</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <style>
+    h2 {
+      color: #73000A; /* USC Garnet */
+    }
+    .pub-list li {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .submitted {
+      margin-top: 2rem;
+      border-top: 2px solid #73000A;
+      padding-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color:#73000A;">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">TFSI Lab</a>
-      <div class="collapse navbar-collapse">
+      <a class="navbar-brand fw-bold d-flex flex-column align-items-start" href="index.html">
+        <img src="image/usc-logo.png" alt="USC Logo" style="height:40px; margin-bottom:5px;">
+        <span style="font-size: 0.95rem; line-height: 1.2; color:white;">
+          Turbulence & Flow-Structure<br>Interaction Lab
+        </span>
+      </a>
+      <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
           <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
           <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Publications -->
   <main class="container my-5">
     <h2>Publications</h2>
-    <ul class="list-unstyled">
-      <li>Doe, J., Smith, J., <strong>Vortex shedding in flexible structures</strong>. <em>Journal of Fluid Mechanics</em>, 2024. <a href="#">[Link]</a></li>
-      <li>Lee, C., Doe, J., <strong>Turbulent energy transfer in flow-structure systems</strong>. <em>Renewable Energy</em>, 2025. <a href="#">[Link]</a></li>
+    <ul class="pub-list">
+      <li><strong>[29]</strong> <u>Cheng, S.*</u>, Neary, V. S., & Chamorro, L. P. (2024). On detrending stream velocity time series for robust tidal flow turbulence characterization. <em>Ocean Eng</em>, 300, 117427.</li>
+      <li><strong>[28]</strong> Kim, J. T., Yoon, H. J., <u>Cheng, S.*</u>, Liu, F., Kang, S., Paudel, S., Chamorro, L. P., & Rogers, J. A. (2024). Functional bio-inspired hybrid fliers with separated ring and leading edge vortices. <em>PNAS Nexus</em>, p110.</li>
+      <li><strong>[27]</strong> Nguyen, D., Kesler, R. M., <u>Cheng, S.</u>, Chamorro, L.P., Vega, S., Fields, A., & Masoud, F. (2024). On the Fire Hose Kickback Force in Solid Water Streams. <em>Fire Technol</em>, 1-15.</li>
+      <li><strong>[26]</strong> Kang, S., Hong, L., <u>Cheng, S.</u>, Best, J. L., & Chamorro, L. P. (2023). On the settling of aligned spherical particles in various quiescent media. <em>J Fluid Mech</em>, 975, R1.</li>
+      <li><strong>[25]</strong> <u>Cheng, S.*</u>, Olivieri, S., Rosti, M. E., & Chamorro, L. P. (2023). Gap-modulated dynamics of flexible plates. <em>J Fluid Mech</em>, 974, A12.</li>
+      <li><strong>[24]</strong> Siguenza-Alvarado, D., Pulletikurthi, V., Quinones, J. J., Nelson, C., <u>Cheng, S.</u>, Doosttalab, A., Chamorro, L. P. & Castillo, L. (2023). Wake interaction of aligned wind turbines over two-dimensional hills. <em>Phys Fluids</em>, 35(10).</li>
+      <li><strong>[23]</strong> Prada, A. F., Distler, A., <u>Cheng, S.</u>, Scott, J. W., Chamorro, L. P., Subramanian, G., Verma V. & Turner, A. (2023). Disposable face masks: a direct source for inhalation of microplastics. <em>arXiv</em>:2308.16295.</li>
+      <li><strong>[22]</strong> Pulletikurthi, V., Esquivel-Puentes, H. A., <u>Cheng, S.</u>, Chamorro, L. P., & Castillo, L. (2023). Impact of flow regime on the performance of anti-biofouling coatings. <em>Sci Rep</em>, 13(1), 9501.</li>
+      <li><strong>[21]</strong> Kang, S., <u>Cheng, S.</u>, Hong, L., Kim, J. T., & Chamorro, L. P. (2023). Single sidewall cooling modulation on Rayleigh–Bénard convection. <em>J Fluid Mech</em>, 957, A13.</li>
+      <li><strong>[20]</strong> Hong, L., <u>Cheng, S.*</u>, Houseago, R. C., Parsons, D. R., Best, J. L., & Chamorro, L. P. (2022). On the submerged low-Cauchy-number canopy dynamics under unidirectional flows. <em>J Fluids Struct</em>, 113, 103646.</li>
+      <!-- ... continue down to [1] just like your LaTeX list ... -->
     </ul>
+
+    <!-- Submitted -->
+    <div class="submitted">
+      <h2>Submitted</h2>
+      <ul class="pub-list">
+        <li><strong>[3]</strong> <u>Cheng, S.*</u>, Jetti, Y. S., Neary, V. S., Ostoja-Starzewskil, M. & Chamorro, L. P. (2024). Incorporating long-range dependence and fractal features in turbulence spectra. <em>PNAS</em>.</li>
+        <li><strong>[2]</strong> Jetti, Y. S., <u>Cheng, S.</u>, Chamorro, L. P. & Ostoja-Starzewskil, M. (2024). A covariance function with fractal, Hurst, and scale-bridging effects for random surfaces and turbulence. <em>Proc A</em>.</li>
+        <li><strong>[1]</strong> Wang, Y., <u>Cheng, S.</u>, Chamorro, L. P., & Chen, J. (2024). Breakdown of isotropic turbulence induced by non-inertial effects. <em>J Fluid Mech</em>.</li>
+      </ul>
+    </div>
   </main>
 
-  <footer class="bg-primary text-white text-center py-3">
-    <p>&copy; 2025 Turbulence & Flow-Structure Interaction Lab | University of Illinois Urbana-Champaign</p>
+  <!-- Footer -->
+  <footer class="text-center py-3" style="background-color:#73000A; color:white;">
+    <p>&copy; 2025 Turbulence & Flow-Structure Interaction Lab | University of South Carolina</p>
   </footer>
 </body>
 </html>
