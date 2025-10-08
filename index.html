@@ -181,6 +181,9 @@
     }
     .content-area{
       padding:18px 20px;
+      display:grid;
+      grid-template-columns: 1fr 380px;
+      gap:20px;
     }
     .section-title{
       color:var(--usc-maroon);
@@ -194,6 +197,11 @@
       margin:0;
       padding-left:18px;
     }
+    .side-image{
+      width:100%;
+      border:1px solid #ccc;
+      border-radius:8px;
+    }
     .footer{
       margin-top:28px;
       display:flex;
@@ -203,6 +211,9 @@
     }
     .logo{width:260px;height:auto}
     .download-link{margin-left:auto}
+    @media (max-width:880px){
+      .content-area{grid-template-columns:1fr;}
+    }
   </style>
 </head>
 <body>
@@ -213,40 +224,40 @@
       </header>
 
       <section class="content-area">
-        <div class="section">
-          <h3 class="section-title">Audience</h3>
-          <ul class="bullet-list">
-            <li>Students with degrees in aerospace, mechanical engineering or closely related fields.</li>
-            <li>Interest in pursuing PhD in experimental fluid dynamics.</li>
-            <li>Interest in solving real-world engineering problems subject to environmental turbulence.</li>
-          </ul>
+        <div class="left-col">
+          <div class="section">
+            <h3 class="section-title">Audience</h3>
+            <ul class="bullet-list">
+              <li>Students with degrees in aerospace, mechanical engineering or closely related fields.</li>
+              <li>Interest in pursuing PhD in experimental fluid dynamics.</li>
+              <li>Interest in solving real-world engineering problems subject to environmental turbulence.</li>
+            </ul>
+          </div>
+
+          <div class="section" style="margin-top:20px;">
+            <h3 class="section-title">Opportunity</h3>
+            <ul class="bullet-list">
+              <li>Work with state-of-the-art experimental techniques using laser diagnostics and computer vision.</li>
+              <li>Engage in research in turbulence, flow control, renewable energy, and complex fluid-structure interaction.</li>
+              <li>Fully funded PhD position available (tuition, stipend, and research support).</li>
+            </ul>
+          </div>
+
+          <div class="section" style="margin-top:20px;">
+            <h3 class="section-title">Contact Information</h3>
+            <ul class="bullet-list">
+              <li>Dr. Shyuan (Jeffrey) Cheng: <a href="mailto:shyuan@mailbox.sc.edu">shyuan@mailbox.sc.edu</a></li>
+              <li>Turbulence and Flow-Structure Interaction Lab (T&FSI Lab) URL: <a href="https://jeffrey1223.github.io/turbulence-fsi-lab/" target="_blank">https://jeffrey1223.github.io/turbulence-fsi-lab/</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="section" style="margin-top:20px;">
-          <h3 class="section-title">Opportunity</h3>
-          <ul class="bullet-list">
-            <li>Work with state-of-the-art experimental techniques using laser diagnostics and computer vision.</li>
-            <li>Engage in research in turbulence, flow control, renewable energy, and complex fluid-structure interaction.</li>
-            <li>Fully funded PhD position available (tuition, stipend, and research support).</li>
-          </ul>
-        </div>
-
-        <div class="section" style="margin-top:20px;">
-          <h3 class="section-title">Contact Information</h3>
-          <ul class="bullet-list">
-            <li>Dr. Shyuan (Jeffrey) Cheng: <a href="mailto:shyuan@mailbox.sc.edu">shyuan@mailbox.sc.edu</a></li>
-            <li>Turbulence and Flow-Structure Interaction Lab (T&FSI Lab) URL: <a href="https://jeffrey1223.github.io/turbulence-fsi-lab/" target="_blank">https://jeffrey1223.github.io/turbulence-fsi-lab/</a></li>
-          </ul>
+        <div class="right-col">
+          <img src="assets/1b4cbbad-7744-40e3-ab61-9d1f0ebce43b.png" alt="T&FSI Lab experimental visualization" class="side-image" />
         </div>
       </section>
 
-      <footer class="footer" role="contentinfo">
-        <img class="logo" src="assets/molinaroli_logo.png" alt="Molinaroli College of Engineering and Computing logo" />
-        <div class="download-link">
-          <a href="assets/usc_style_blank_with_border.pdf" download>Download PDF template</a>
-        </div>
-      </footer>
-    </main>
+      <footer clas
   </div>
 </body>
 </html>
