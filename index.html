@@ -122,33 +122,18 @@
 
 
 
-<!--
-TF SI Lab - GitHub Pages Personal Webpage Template
-Place this file as `index.html` at the root of your GitHub repo.
-Put the Molinaroli logo at `assets/molinaroli_logo.png` (or update path below).
-Optionally add `assets/usc_style_blank_with_border.pdf` to offer a PDF download.
-
-To publish on GitHub Pages:
-1. Create a new repository (e.g., `tfsi-poster-site`) and push this file as `index.html`.
-2. Add the `assets/` folder with `molinaroli_logo.png` and optional PDF.
-3. In the repository settings enable GitHub Pages (branch `main`, folder `/ (root)`).
-
-This single-file template reproduces the USC-style poster layout: maroon border, header,
-large content area (blank by default), and footer with the Molinaroli logo.
---> 
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>T&FSI Lab — USC Poster Template</title>
-  <meta name="description" content="Blank USC-style poster template for T&FSI Lab. Edit content area as needed." />
+  <meta name="description" content="USC-style poster template with T&FSI Lab content." />
   <style>
     :root{
-      --usc-maroon: #800000; /* USC maroon */
+      --usc-maroon: #800000;
       --page-bg: #ffffff;
-      --border-thickness: 22px; /* visual thickness like the poster */
+      --border-thickness: 22px;
       --max-width: 1024px;
       --gutter: 28px;
     }
@@ -167,7 +152,6 @@ large content area (blank by default), and footer with the Molinaroli logo.
       align-items:flex-start;
       justify-content:center;
       padding:40px;
-      background:linear-gradient(180deg, #fff 0%, #fff 100%);
     }
     .poster{
       width:100%;
@@ -176,9 +160,7 @@ large content area (blank by default), and footer with the Molinaroli logo.
       position:relative;
       padding:calc(var(--gutter) + 10px);
       box-sizing:border-box;
-      /* inner content area to leave space for border */
     }
-    /* maroon outer border */
     .poster:before{
       content:"";
       position:absolute;
@@ -187,12 +169,10 @@ large content area (blank by default), and footer with the Molinaroli logo.
       pointer-events:none;
       box-sizing:border-box;
     }
-
-    /* Header matching the template */
     .header{
       text-align:center;
       color:var(--usc-maroon);
-      font-weight:700;
+      font-weight:900;
       letter-spacing:0.02em;
       margin-bottom:18px;
       margin-top:6px;
@@ -200,15 +180,7 @@ large content area (blank by default), and footer with the Molinaroli logo.
       font-size:22px;
     }
     .content-area{
-      min-height:520px; /* blank content area for editing */
       padding:18px 20px;
-      display:grid;
-      grid-template-columns: 1fr 380px;
-      gap:20px;
-      align-items:start;
-    }
-    .left-col{
-      padding-right:6px;
     }
     .section-title{
       color:var(--usc-maroon);
@@ -216,16 +188,11 @@ large content area (blank by default), and footer with the Molinaroli logo.
       margin-bottom:6px;
       font-size:15px;
     }
-    .bullet-list{font-size:13px;line-height:1.55;margin:0;padding-left:18px}
-    .right-col{
-      border:1px dashed #ddd;
-      min-height:380px;
-      padding:12px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#888;
-      font-size:14px;
+    .bullet-list{
+      font-size:13px;
+      line-height:1.55;
+      margin:0;
+      padding-left:18px;
     }
     .footer{
       margin-top:28px;
@@ -236,56 +203,46 @@ large content area (blank by default), and footer with the Molinaroli logo.
     }
     .logo{width:260px;height:auto}
     .download-link{margin-left:auto}
-
-    /* responsive */
-    @media (max-width:880px){
-      .content-area{grid-template-columns:1fr;}
-      .right-col{order:-1}
-      .logo{width:220px}
-    }
-
-    /* helpers to mimic poster spacing when printed */
-    @media print{
-      body{background:white}
-      .page-wrap{padding:0}
-      .poster{box-shadow:none;margin:0;padding:18px}
-      .poster:before{border-width:18px}
-    }
   </style>
 </head>
 <body>
   <div class="page-wrap">
     <main class="poster" role="main">
       <header class="header">
-        OPPORTUNITY TO STUDY AT THE UNIVERSITY OF<br/>SOUTH CAROLINA (USC), USA
+        <b>OPPORTUNITY TO STUDY AT THE UNIVERSITY OF<br/>SOUTH CAROLINA (USC), USA</b>
       </header>
 
-      <!-- BLANK CONTENT AREA - edit left-col with your text -->
-      <section class="content-area" aria-label="Poster content area">
-        <div class="left-col" id="left-col">
-          <!-- Example placeholders (you asked: leave blank). Remove or replace as needed. -->
-          <!--
-          <div class="section">
-            <h3 class="section-title">Audience</h3>
-            <ul class="bullet-list">
-              <li>Students with degrees in Aerospace, Mechanical Engineering, or related fields.</li>
-              <li>Interest in pursuing a PhD in Experimental Fluid Dynamics.</li>
-              <li>Interest in addressing real-world engineering problems involving environmental turbulence.</li>
-            </ul>
-          </div>
-          -->
+      <section class="content-area">
+        <div class="section">
+          <h3 class="section-title">Audience</h3>
+          <ul class="bullet-list">
+            <li>Students with degrees in aerospace, mechanical engineering or closely related fields.</li>
+            <li>Interest in pursuing PhD in experimental fluid dynamics.</li>
+            <li>Interest in solving real-world engineering problems subject to environmental turbulence.</li>
+          </ul>
         </div>
 
-        <aside class="right-col" id="right-col">
-          <!-- intentionally blank area for images/figures if needed -->
-          Poster content area (right panel)
-        </aside>
+        <div class="section" style="margin-top:20px;">
+          <h3 class="section-title">Opportunity</h3>
+          <ul class="bullet-list">
+            <li>Work with state-of-the-art experimental techniques using laser diagnostics and computer vision.</li>
+            <li>Engage in research in turbulence, flow control, renewable energy, and complex fluid-structure interaction.</li>
+            <li>Fully funded PhD position available (tuition, stipend, and research support).</li>
+          </ul>
+        </div>
+
+        <div class="section" style="margin-top:20px;">
+          <h3 class="section-title">Contact Information</h3>
+          <ul class="bullet-list">
+            <li>Dr. Shyuan (Jeffrey) Cheng: <a href="mailto:shyuan@mailbox.sc.edu">shyuan@mailbox.sc.edu</a></li>
+            <li>Turbulence and Flow-Structure Interaction Lab (T&FSI Lab) URL: <a href="https://jeffrey1223.github.io/turbulence-fsi-lab/" target="_blank">https://jeffrey1223.github.io/turbulence-fsi-lab/</a></li>
+          </ul>
+        </div>
       </section>
 
       <footer class="footer" role="contentinfo">
         <img class="logo" src="assets/molinaroli_logo.png" alt="Molinaroli College of Engineering and Computing logo" />
         <div class="download-link">
-          <!-- Optional: link to a PDF in the repo -->
           <a href="assets/usc_style_blank_with_border.pdf" download>Download PDF template</a>
         </div>
       </footer>
