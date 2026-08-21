@@ -1,57 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>T-FSI Lab - Courses</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <style>
-    h2 {
-      color: #73000A; /* USC Garnet */
-    }
-  </style>
-</head>
-<body>
-  <!-- ✅ Consistent Navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color:#73000A;">
-    <div class="container">
-      <!-- Logo + Lab Name inline -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html" style="gap:12px;">
-        <img src="image/IMG_0208.png" alt="USC Logo" style="height:60px;">
-        <span style="font-size: 1rem; color:white; line-height:1.2;">
-          Turbulence & Flow-Structure <br> Interaction Lab
-        </span>
-      </a>
+<!-- Course Page Content -->
+<main class="container my-5">
+  <h2 class="mb-5 text-center">Courses</h2>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="research.html">Research</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="people.html">People</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="publications.html">Publications</a></li>
-          <li class="nav-item"><a class="nav-link active text-white" href="courses.html">Courses</a></li>
-        </ul>
+  <div class="row justify-content-center g-4">
+
+    <!-- EMCH 360 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title" style="color:#73000A;">
+            EMCH 360: Fluid Mechanics
+          </h4>
+          <p class="card-text text-muted mb-2">
+            University of South Carolina
+          </p>
+          <p class="card-text">
+            An introduction to the fundamental principles of fluid mechanics,
+            including fluid properties, hydrostatics, conservation laws,
+            dimensional analysis, and internal and external flows.
+          </p>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Course Page Content -->
-<main class="container my-5 text-center">
-  <h2 class="mb-4">Courses</h2>
-  <img src="image/IMG_0207.webp" 
-       alt="Courses Coming Soon" 
-       class="img-fluid" 
-       style="max-width: 350px;">
-  <p class="mt-3 text-muted">Content will be updated soon.</p>
+    <!-- AESP 265 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title" style="color:#73000A;">
+            AESP 265: Aerodynamics I: Incompressible Flow
+          </h4>
+          <p class="card-text text-muted mb-2">
+            University of South Carolina
+          </p>
+          <p class="card-text">
+            An introduction to incompressible aerodynamics, including
+            fundamental flow concepts, potential flow, airfoil theory,
+            aerodynamic forces, and applications to aerospace systems.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </main>
-
-  <!-- ✅ Consistent Footer -->
-  <footer class="text-center py-3" style="background-color:#73000A; color:white;">
-    <p>&copy; 2025 Turbulence & Flow-Structure Interaction Lab | University of South Carolina</p>
-  </footer>
-</body>
-</html>
